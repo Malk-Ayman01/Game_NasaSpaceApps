@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Mono:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { background: #050A14; font-family: 'Space Mono', monospace; margin: 0; overflow-x: hidden; }
+.pixelated { image-rendering: pixelated; image-rendering: crisp-edges; }
+/* .scanlines::after {
+  content: ""; position: fixed; inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 3px);
+  pointer-events: none; z-index: 999;
+} */
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #050A14;
+  font-family: "Space Mono", monospace;
+  overflow-x: hidden;
+}
+.pixel-title {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.pixel-text {
+  font-family: 'Pixelify Sans', monospace;
+}
+/* Pixel Art panels */
+.pixel-panel {
+  background: #0A1322;
+  border: 2px solid #27364A;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 #02050B;
+}
+
+/* Pixel Art buttons */
+.pixel-button {
+  background: #199eb0;
+  color: #050A14;
+  border: 2px solid #8BE8EE;
+  border-radius: 0;
+  padding: 12px 18px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #02050B;
+  transition: transform 0.1s;
+}
+
+.pixel-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #02050B;
+}
+
+.pixel-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
